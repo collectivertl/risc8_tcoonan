@@ -1,0 +1,36 @@
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json
+{
+	"name": "HW Dev Container",
+	"dockerFile": "Dockerfile",
+
+	"runArgs": [
+		// Uncomment the line if you will use a ptrace-based debugger like C++, Go, and Rust.
+		// "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined",
+	],
+
+	// Use 'settings' to set *default* container specific settings.json values on container create. 
+	// You can edit these settings after create using File > Preferences > Settings > Remote.
+	"settings": { 
+		"terminal.integrated.shell.linux": "/bin/bash"
+	},
+
+	// Enable X forwarding to the container host
+	// If the host is Windows based install something like VcXsrv X Server to enable GUI programs
+	"containerEnv": {
+		"DISPLAY": "host.docker.internal:0.0"
+	},
+
+	// Uncomment the next line if you want to publish any ports.
+	// "appPort": [],
+
+	// Uncomment the next line to run commands after the container is created.
+	// "postCreateCommand": "uname -a",
+
+	"remoteUser": "vscode",
+
+	// Add the IDs of extensions you want installed when the container is created in the array below.
+	"extensions": [
+		"eamodio.gitlens",
+		"mshr-h.veriloghdl"
+	]
+}

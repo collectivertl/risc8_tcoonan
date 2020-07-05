@@ -1,3 +1,0 @@
-verilog test.v cpu.v alu.v regs.v idec.v exp.v dram.v pram.v
-
-
