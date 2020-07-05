@@ -27,9 +27,9 @@ steps:
     cd ..
   displayName: 'Build documentation'
 
-  - script: |
-  echo Perform Simulation
-  cd dv
-  make
-  cd ..
-displayName: 'Perform simulation'
+- script: |
+    echo Perform Simulation
+    cd dv
+    make
+    cd ..
+  displayName: 'Perform simulation'
