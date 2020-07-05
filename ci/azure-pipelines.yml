@@ -1,0 +1,35 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-18.04'
+
+steps:
+- bash: |
+    sudo apt-get install -y iverilog gputils make gcc libc6-dev python3-pip latexmk texlive-latex-recommended texlive-fonts-recommended texlive-formats-extra --no-install-recommends
+  displayName: Install dependencies via apt
+
+- script: |
+    pip3 install -U Sphinx
+    pip3 install Pillow
+    pip3 install sphinx_rtd_theme
+  displayName: Install python dependencies
+
+- script: |
+    echo Build Documentation
+    cd doc
+    make
+    cd ..
+  displayName: 'Build documentation'
+
+  - script: |
+  echo Perform Simulation
+  cd dv
+  make
+  cd ..
+displayName: 'Perform simulation'
