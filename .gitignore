@@ -1,0 +1,11 @@
+doc/_build
+doc/images/risc8.jpg
+dv/*.lst
+dv/*.cod
+dv/hex2v
+dv/*.rom
+dv/sindata
+dv/sindata.hex
+dv/a.out
+dv/*.vcd
+.vscode
