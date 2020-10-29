@@ -1,6 +1,6 @@
 # RISC8 Core
 
-[![Build Status](https://dev.azure.com/collectivertl/Test/_apis/build/status/collectivertl.risc8_tcoonan?branchName=master)](https://dev.azure.com/collectivertl/Test/_build/latest?definitionId=2&branchName=master)
+[![Build Status](https://dev.azure.com/collectivertl/Test/_apis/build/status/collectivertl.risc8_tcoonan?branchName=main)](https://dev.azure.com/collectivertl/Test/_build/latest?definitionId=3&branchName=main)
 [![Documentation Status](https://readthedocs.org/projects/risc8-tcoonan/badge/?version=latest)](https://risc8-tcoonan.readthedocs.io/en/latest/?badge=latest)
 
 By: Tom Coonan
