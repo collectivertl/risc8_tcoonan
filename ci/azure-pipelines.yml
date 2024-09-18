@@ -11,7 +11,7 @@ pool:
 
 steps:
 - bash: |
-    sudo apt-get install -y iverilog gputils make gcc libc6-dev python3-pip latexmk texlive-latex-recommended texlive-fonts-recommended texlive-formats-extra --no-install-recommends
+    sudo apt-get install -y iverilog gputils make gcc libc6-dev python3-pip latexmk texlive-latex-recommended texlive-fonts-recommended texlive-formats-extra tex-gyre --no-install-recommends
   displayName: Install dependencies via apt
 
 - script: |
