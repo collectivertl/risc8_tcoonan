@@ -23,7 +23,7 @@ RUN apt-get update \
     gputils \
     make gcc libc6-dev \
     python3-pip \
-    latexmk texlive-latex-recommended texlive-fonts-recommended texlive-formats-extra \
+    latexmk texlive-latex-recommended texlive-fonts-recommended texlive-formats-extra tex-gyre \
     #tcl-dev python3 python-pip build-essential autoconf \
     #python2.7-dev libyaml-dev libyaml-dev  python-yaml libelf-dev \
     #gperf bison flex clang libreadline-dev gawk \
@@ -32,6 +32,7 @@ RUN apt-get update \
     && pip3 install -U Sphinx \
     && pip3 install Pillow \
     && pip3 install sphinx_rtd_theme \
+    && export LC_ALL=C \
     #&& pip install pytest \
     #&& pip install tap.py \
     #&& pip install fusesoc \
